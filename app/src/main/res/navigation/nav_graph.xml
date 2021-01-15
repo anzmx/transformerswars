@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.agzz.transformerswars.ui.welcome.WelcomeFragment"
+        android:label="Welcome Fragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomefragment_to_listFragment"
+            app:destination="@id/ListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.agzz.transformerswars.ui.transformers.list.TransformersListFragment"
+        android:label="List Fragment"
+        tools:layout="@layout/fragment_transformers_list">
+
+        <action
+            android:id="@+id/action_ListFragment_to_DetailFragment"
+            app:destination="@id/CreateEditFragment" />
+    </fragment>
+                <fragment
+                    android:id="@+id/CreateEditFragment"
+                    android:name="com.agzz.transformerswars.ui.transformers.detail.CreateEditFragment"
+                    android:label="Create Edit Fragment"
+                    tools:layout="@layout/fragment_transformers_create">
+
+                    <action
+                        android:id="@+id/action_DetailFragment_to_ListFragment"
+                        app:destination="@id/ListFragment" />
+
+                    <argument
+                        android:name="transformer"
+                        android:defaultValue="@null"
+                        app:argType="com.agzz.transformerswars.models.Transformer"
+                        app:nullable="true" />
+                </fragment>
+            </navigation>

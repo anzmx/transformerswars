@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">TransformersWars</string>
+    <string name="stat_str">Strength: %1$d</string>
+    <string name="stat_int">Intelligence: %1$d</string>
+    <string name="stat_spd">Speed: %1$d</string>
+    <string name="stat_end">Endurance: %1$d</string>
+    <string name="stat_rnk">Rank: %1$d</string>
+    <string name="stat_crg">Courage: %1$d</string>
+    <string name="stat_fpw">Firepower: %1$d</string>
+    <string name="stat_skl">Skill: %1$d</string>
+    <string name="create_transformer">Create a new transformer</string>
+    <string name="name">Name</string>
+    <string name="team">Team</string>
+    <string name="d">D</string>
+    <string name="a">A</string>
+    <string name="strength">Strength</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="speed">Speed</string>
+    <string name="endurance">Endurance</string>
+    <string name="rank">Rank</string>
+    <string name="courage">Courage</string>
+    <string name="firepower">Firepower</string>
+    <string name="skill">Skill</string>
+    <string name="edit_transformer">Edit Transformer</string>
+    <string name="save">Save</string>
+    <string name="welcome_message">Welcome transformers wars!, to get you started you need to access de allspark!, after this you will be able to create your own transformers and pit them against each other!</string>
+    <string name="start">Start</string>
+    <string-array name="teams_array">
+        <item>Autobots</item>
+        <item>Decepticons</item>
+    </string-array>
+
+
+</resources>
